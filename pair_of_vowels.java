@@ -6,9 +6,9 @@ import java.util.Scanner;
 
 public class pair_of_vowels {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);  // Initialize the Scanner Class
 
-        System.out.println("Enter the String :");
+        System.out.println("Enter the String :");  // Ask for the input
         String str = sc.next();
         String strnew="";
         int len=str.length(),i;
@@ -23,7 +23,7 @@ public class pair_of_vowels {
             {
                 if (ch1=='a' || ch1=='e' || ch1=='i' || ch1=='o' || ch1=='u')
                 {
-                    strnew = strnew + ch+ch1+"   ";
+                    strnew = strnew + ch+ch1+"   ";  // Add to the new string
                 }
             }
         }
