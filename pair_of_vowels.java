@@ -4,20 +4,22 @@ package com.akshat.string_programs;
 
 import java.util.Scanner;
 
-public class pair_of_vowels {
-    public static void main(String[] args) {
+public class pair_of_vowels 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc=new Scanner(System.in);  // Initialize the Scanner Class
 
         System.out.println("Enter the String :");  // Ask for the input
-        String str = sc.next();
+        String str = sc.next();  // Store the input in a variable
         String strnew="";
         int len=str.length(),i;
-        char ch,ch1;
+        char ch,ch1;  // Initialize the character
 
         for (i=1;i<=len-1;i++)
         {
             ch=str.charAt(i-1);
-            ch1=str.charAt(i);
+            ch1=str.charAt(i);  // store the value in character
 
             if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
             {
